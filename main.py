@@ -27,7 +27,7 @@ ehelp = discord.Embed(
 )   
 ehelp.add_field(name="Moderation", value=".kick (@user)\n.ban (@user)\n.clear")
 ehelp.add_field(name="Fun", value=".inspire\n.rps \n.echo (message)\n.embed (message)\n.coinflip")
-ehelp.add_field(name="Misc", value=".serverinfo\n.userinfo (@user)\n.botinfo\n.uptime\n.invite")
+ehelp.add_field(name="Misc", value=".serverinfo\n.userinfo (@user)\n.botinfo\n.uptime\n.invite\n.sourcecode")
 
 @client.event
 async def on_member_join(ctx, member):
@@ -297,7 +297,7 @@ async def uptime(ctx):
 
 
 @client.command()
-async def github(ctx):
+async def sourcecode(ctx):
   await ctx.send("View the bots code: https://github.com/JaCrispy4939/crispy-bot")
 
 
